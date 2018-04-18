@@ -5,11 +5,13 @@ var mongoose = require ('mongoose');
 var mongodb = require('mongodb');
 var createError = require('http-errors');
 var logger = require('morgan');
+var random = require('node-random-number');
 
 
 
 //Connection 
-mongoose.connect('mongodb://jashakai:1@ds247619.mlab.com:47619/projcet415');
+//mongoose.connect('mongodb://jashakai:1@ds247619.mlab.com:47619/projcet415');
+mongoose.connect('mongodb://localhost/Project415v10D');
 var db = mongodb.connection;
 
 
@@ -37,12 +39,11 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-//app.get('/',function(req,res){
-	//res.send('Hello');
-//});
-//Start Server
-app.listen(3000);
-console.log('Running on port 3000...')
+var port = random({start: 3000, end: 4090});
+var port2 = port.pop(port);
+
+app.listen(port2);
+console.log('Running on port '+ port2 +'...')
 
 /*var express = require('express'),
     bodyParser = require('body-parser'),
