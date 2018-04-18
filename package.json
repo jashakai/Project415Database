@@ -1,0 +1,22 @@
+{
+  "name": "415project",
+  "version": "1.0.0",
+  "description": "CMPS415Projcet",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "http-errors": "^1.6.3",
+    "method-override": "^2.3.10",
+    "mongodb": "^3.0.6",
+    "mongoose": "^5.0.15",
+    "morgan": "^1.9.0",
+    "node-restful": "^0.2.6",
+    "save": "^2.3.2"
+  },
+  "author": "Jon Schackai",
+  "license": "ISC"
+}

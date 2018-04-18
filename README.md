@@ -1,2 +1,1 @@
-# Project415Database
-Database version of the 415 Project.
+# 415Project
