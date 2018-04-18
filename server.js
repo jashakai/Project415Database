@@ -9,7 +9,7 @@ var logger = require('morgan');
 
 
 //Connection 
-mongoose.connect('mongodb://localhost/Project415v10D');
+mongoose.connect('mongodb://jashakai:1@ds247619.mlab.com:47619/projcet415');
 var db = mongodb.connection;
 
 
